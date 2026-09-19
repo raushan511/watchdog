@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class TestMain {
     private final static Logger logger = LoggerFactory.getLogger(TestMain.class);
      static void main()  {
-         WatchDogService watchDogService = WatchDogService.create();
+         WatchDogService watchDogService = WatchDogService.get();
         try  {
 
             TestWatcher watchable1 = new TestWatcher("First");
